@@ -1,0 +1,856 @@
+snippet abtn "abtn"
+%a.btn{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet abtnblock "abtnblock"
+%a.btn.btn-block{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet abtndanger "abtndanger"
+%a.btn.btn-danger{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet abtninfo "abtninfo"
+%a.btn.btn-info{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet abtninverse "abtninverse"
+%a.btn.btn-inverse{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet abtnlarge "abtnlarge"
+%a.btn.btn-large{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet abtnmini "abtnmini"
+%a.btn.btn-mini{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet abtnprimary "abtnprimary"
+%a.btn.btn-primary{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet abtnsmall "abtnsmall"
+%a.btn.btn-small{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet abtnsuccess "abtnsuccess"
+%a.btn.btn-success{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet abtnwarning "abtnwarning"
+%a.btn.btn-warning{:href => "${1:#}"} ${2:Text}
+endsnippet
+
+snippet aclose "aclose"
+%a.close{:href => "#"} &times;
+endsnippet
+
+snippet adisabled "adisabled"
+%a.btn.disabled{:href => "#"} ${1:Primary link}
+endsnippet
+
+snippet alert "alert"
+.alert
+  %button.close{:type => "button", "data-dismiss" => "alert"} &times;
+  %strong ${1:Warning!}
+  ${2:Best check yo self, you're not looking too good.}
+endsnippet
+
+snippet alertblock "alertblock"
+.alert.alert-block
+  %button.close{:type => "button", "data-dismiss" => "alert"} &times;
+  %h4 ${1:Warning!}
+  ${2:Best check yo self, you're not...}
+endsnippet
+
+snippet alerterror "alerterror"
+.alert.alert-error
+  ${1:...}
+endsnippet
+
+snippet alertinfo "alertinfo"
+.alert.alert-info
+  ${1:...}
+endsnippet
+
+snippet alertsuccess "alertsuccess"
+.alert.alert-success
+  ${1:...}
+endsnippet
+
+snippet badge "badge"
+%span.badge ${1:1}
+endsnippet
+
+snippet badgeimportant "badgeimportant"
+%span.badge.badge-important ${1:2}
+endsnippet
+
+snippet badgeinfo "badgeinfo"
+%span.badge.badge-info ${1:2}
+endsnippet
+
+snippet badgeinverse "badgeinverse"
+%span.badge.badge-inverse ${1:2}
+endsnippet
+
+snippet badgesuccess "badgesuccess"
+%span.badge.badge-success ${1:2}
+endsnippet
+
+snippet badgewarning "badgewarning"
+%span.badge.badge-warning ${1:2}
+endsnippet
+
+snippet breadcrumb "breadcrumb"
+%ul.breadcrumb
+  %li
+    %a{:href => "${1:#}"} ${2:Home}
+    %span.divider /
+  %li
+    %a{:href => "${3:#}"} ${4:Library}
+    %span.divider /
+  %li.active ${5:Data}
+endsnippet
+
+snippet btn "btn"
+%button.btn{:type => "button"} ${1:Default}
+endsnippet
+
+snippet btnblock "btnblock"
+%button.btn.btn-large.btn-block{:type => "button"} ${1:Block level button}
+endsnippet
+
+snippet btndanger "btndanger"
+%button.btn.btn-danger{:type => "button"} ${1:Default}
+endsnippet
+
+snippet btndisabled "btndisabled"
+%button.btn.disabled{:type => "button", :disabled => "disabled"} ${1:Primary button}
+endsnippet
+
+snippet btndropdown "btndropdown"
+.btn-group
+  %a.btn.dropdown-toggle{'data-toggle' => "dropdown", :href => "#"}
+    ${1:Action}
+    %span.caret
+  %ul.dropdown-menu
+    ${2:<!-- dropdown menu links -->}
+endsnippet
+
+snippet btndropdownsplit "btndropdownsplit"
+.btn-group
+  %button.btn ${1:Action}
+  %button.btn.dropdown-toggle{'data-toggle' => "dropdown"}
+    %span.caret
+  %ul.dropdown-menu
+    ${2:<!-- dropdown menu links -->}
+endsnippet
+
+snippet btndropup "btndropup"
+.btn-group.dropup
+  %button.btn ${1:Dropup}
+  %button.btn.dropdown-toggle{"data-toggle" => "dropdown"}
+    %span.caret
+  %ul.dropdown-menu
+    ${2:<!-- dropdown menu links -->}
+endsnippet
+
+snippet btngroup "btngroup"
+.btn-group
+  %button.btn ${1:1}
+  %button.btn ${2:2}
+  %button.btn ${3:3}
+endsnippet
+
+snippet btngroupvertical "btngroupvertical"
+.btn-group.btn-group-vertical
+  ${1:...}
+endsnippet
+
+snippet btninfo "btninfo"
+%button.btn.btn-info{:type => "button"} ${1:Default}
+endsnippet
+
+snippet btninverse "btninverse"
+%button.btn.btn-inverse{:type => "button"} ${1:Default}
+endsnippet
+
+snippet btnlarge "btnlarge"
+%button.btn.btn-large{:type => "button"} ${1:Default}
+endsnippet
+
+snippet btnlink "btnlink"
+%button.btn.btn-link{:type => "button"} ${1:Default}
+endsnippet
+
+snippet btnmini "btnmini"
+%button.btn.btn-mini{:type => "button"} ${1:Default}
+endsnippet
+
+snippet btnprimary "btnprimary"
+%button.btn.btn-primary{:type => "button"} ${1:Default}
+endsnippet
+
+snippet btnsmall "btnsmall"
+%button.btn.btn-small{:type => "button"} ${1:Default}
+endsnippet
+
+snippet btnsuccess "btnsuccess"
+%button.btn.btn-success{:type => "button"} ${1:Default}
+endsnippet
+
+snippet btntoolbar "btntoolbar"
+.btn-toolbar
+  .btn-group
+    ${1:...}
+endsnippet
+
+snippet btnwarning "btnwarning"
+%button.btn.btn-warning{:type => "button"} ${1:Default}
+endsnippet
+
+snippet checkboxinline "checkboxinline"
+%label.checkbox.inline
+  %input#${1:inlineCheckbox1}{:type => "checkbox", :value => "${2:option1}"} ${3:1}
+endsnippet
+
+snippet close "close"
+%button.close &times;
+endsnippet
+
+snippet container "container"
+.container
+  ${1:...}
+endsnippet
+
+snippet containerfluid "containerfluid"
+.container-fluid
+  ${1:...}
+endsnippet
+
+snippet controlsrow "controlsrow"
+.controls.controls-row
+  %input.${1:span4}{:type => "text", :placeholder => "${2:.span4}"}
+  %input.${3:span1}{:type => "text", :placeholder => "${4:.span1}"}
+endsnippet
+
+snippet dlhorizontal "dlhorizontal"
+%dl.dl-horizontal
+  %dt ${1:...}
+  %dd ${2:...}
+endsnippet
+
+snippet dropdownmenu "dropdownmenu"
+.dropdown
+  <!-- Link or button to toggle dropdown -->
+  %ul.dropdown-menu{:role => "menu", :aria-labelledby => "dLabel"}
+    %li
+      %a{:tabindex => "-1", :href => "#"} ${1:Action}
+    %li
+      %a{:tabindex => "-1", :href => "#"} ${2:Another action}
+    %li
+      %a{:tabindex => "-1", :href => "#"} ${3:Something else here}
+    %li.divider
+    %li
+      %a{:tabindex => "-1", :href => "#"} ${4:Separated link}
+endsnippet
+
+snippet form "form"
+%form
+  %fieldset
+    %legend ${1:Legend}
+    %label ${2:Label name}
+    %input{:type => "text", :placeholder => "${3:Type something…}"}
+    %span.help-block ${4:Example block-level help text here.}
+    %label.checkbox
+      %input{:type => "checkbox"} ${5:Check me out}
+    %button.btn{:type => "submit"} ${6:Submit}
+endsnippet
+
+snippet formactions "formactions"
+.form-actions
+  %button.btn.btn-primary{:type => "submit"} ${1:Save changes}
+  %button.btn{:type => "button"} ${2:Cancel}
+endsnippet
+
+snippet formhorizontal "formhorizontal"
+%form.form-horizontal
+  .control-group
+    %label.control-label{:for => "inputEmail"} Email
+    .controls
+      %input#inputEmail{:type => "text", :placeholder => "Email"}
+  .control-group
+    %label.control-label{:for => "inputPassword"} Password
+    .controls
+      %input#inputPassword{:type => "password", :placeholder => "Password"}
+  .control-group
+    .controls
+      %label.checkbox
+        %input{:type => "checkbox"} Remember me
+      %button.btn{:type => "submit"} Sign in
+endsnippet
+
+snippet forminline "forminline"
+%form.form-inline
+  %input.input-small{:type => "text", :placeholder => "${1:Email}"}
+  %input.input-small{:type => "password", :placeholder => "${2:Password}"}
+  %label.checkbox
+    %input{:type => "checkbox"} ${3:Remember me}
+  %button.btn{:type => "submit"} ${4:Sign in}
+endsnippet
+
+snippet formsearch "formsearch"
+%form.form-search
+  %input.input-medium.search-query{:type => "text"}
+  %button.btn{:type => "submit"} ${1:Search}
+endsnippet
+
+snippet helpblock "helpblock"
+%span.help-block ${1:A longer block of help text that breaks onto a new line and may extend beyond one line.}
+endsnippet
+
+snippet helpinline "helpinline"
+%span.help-inline ${1:Inline help text}
+endsnippet
+
+snippet herounit "herounit"
+.hero-unit
+  %h1 ${1:Heading}
+  %p ${2:Tagline}
+  %p
+    %a.btn.btn-primary.btn-large
+      ${3:Learn more}
+endsnippet
+
+snippet icon "icon"
+%i.icon-${1:search}
+endsnippet
+
+snippet iconwhite "iconwhite"
+%i.icon-${1:search}.icon-white
+endsnippet
+
+snippet imgcircle "imgcircle"
+%img.img-circle{:src => "${1:...}"}
+endsnippet
+
+snippet imgpolaroid "imgpolaroid"
+%img.img-polaroid{:src => "${1:...}"}
+endsnippet
+
+snippet imgrounded "imgrounded"
+%img.img-rounded{:src => "${1:...}"}
+endsnippet
+
+snippet initialism "initialism"
+%abbr.initialism{:title => "${1:HyperText Markup Language}"} ${2:HTML}
+endsnippet
+
+snippet inline "inline"
+%ul.inline
+  %li ${1:...}
+endsnippet
+
+snippet input-small "input-small"
+%input.input-small{:type => "text"}
+endsnippet
+
+snippet inputappend "inputappend"
+.input-append
+  %input#appendedInput.span2{:type => "text"}
+  %span.add-on ${1:.00}
+endsnippet
+
+snippet inputappendbtn "inputappendbtn"
+.input-append
+  %input#appendedInputButton.span2{:type => "text"}
+  %button.btn{:type => "button"} ${1:Go!}
+endsnippet
+
+snippet inputappendbtndropdown "inputappendbtndropdown"
+.input-append
+  %input#appendedDropdownButton.span2{:type => "text"}
+  .btn-group
+    %button.btn.dropdown-toggle{'data-toggle' => "dropdown"}
+      ${1:Action}
+      %span.caret
+    %ul.dropdown-menu
+      ${2:...}
+endsnippet
+
+snippet inputblocklevel "inputblocklevel"
+%input.input-block-level{:type => "text"}
+endsnippet
+
+snippet inputlarge "inputlarge"
+%input.input-large{:type => "text"}
+endsnippet
+
+snippet inputmedium "inputmedium"
+%input.input-medium{:type => "text"}
+endsnippet
+
+snippet inputmini "inputmini"
+%input.input-mini{:type => "text"}
+endsnippet
+
+snippet inputprepend "inputprepend"
+.input-prepend
+  %span.add-on ${1:@}
+  %input#prependedInput.span2{:type => "text", :placeholder => "${2:Username}"}
+endsnippet
+
+snippet inputprependappend "inputprependappend"
+.input-prepend.input-append
+  %span.add-on ${1:$}
+  %input.span2#${2:appendedPrependedInput}{:type => "text"}
+  %span.add-on ${3:.00}
+endsnippet
+
+snippet inputxlarge "inputxlarge"
+%input.input-xlarge{:type => "text"}
+endsnippet
+
+snippet inputxxlarge "inputxxlarge"
+%input.input-xxlarge{:type => "text"}
+endsnippet
+
+snippet label "label"
+%span.label ${1:Default}
+endsnippet
+
+snippet labelimportant "labelimportant"
+%span.label.label-important ${1:Important}
+endsnippet
+
+snippet labelinfo "labelinfo"
+%span.label.label-info ${1:Info}
+endsnippet
+
+snippet labelinverse "labelinverse"
+%span.label.label-inverse ${1:Inverse}
+endsnippet
+
+snippet labelsuccess "labelsuccess"
+%span.label.label-success ${1:Success}
+endsnippet
+
+snippet labelwarning "labelwarning"
+%span.label.label-warning ${1:Warning}
+endsnippet
+
+snippet lead "lead"
+%p.lead ${1:...}
+endsnippet
+
+snippet media "media"
+.media
+  %a.pull-left{:href => "#"}
+    %img.media-object{:src => "${1:image.jpg}"}
+  .media-body
+    %h4.media-heading Media heading
+    ${2:...}
+    <!-- Nested media object -->
+    .media
+      ${3:...}
+endsnippet
+
+snippet medialist "medialist"
+%ul.media-list
+  %li.media
+    %a.pull-left{:href => "#"}
+      %img.media-object{:src => "${1:image.jpg}"}
+    .media-body
+      %h4.media-heading Media heading
+      ${2:...}
+      <!-- Nested media object -->
+      .media
+        ${3:...}
+endsnippet
+
+snippet muted "muted"
+%p.muted ${1:Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.}
+endsnippet
+
+snippet navbar "navbar"
+.navbar
+  .navbar-inner
+    %a.brand{:href => "#"} ${1:Title}
+    %ul.nav
+      %li.active
+        %a{:href => "#"} ${2:Home}
+      %li
+        %a{:href => "#"} ${3:Link}
+      %li
+        %a{:href => "#"} ${4:Link}
+endsnippet
+
+snippet navbarcollapse "navbarcollapse"
+.navbar
+  .navbar-inner
+    .container
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      %a.btn.btn-navbar{'data-toggle' => "collapse", 'data-target' => ".nav-collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      %a.brand{:href => "#"} ${1:Project name}
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      .nav-collapse.collapse
+        ${2:<!-- .nav, .navbar-search, .navbar-form, etc -->}
+endsnippet
+
+snippet navbarfixedbottom "navbarfixedbottom"
+.navbar.navbar-fixed-bottom
+  ${1:...}
+endsnippet
+
+snippet navbarfixedtop "navbarfixedtop"
+.navbar.navbar-fixed-top
+  ${1:...}
+endsnippet
+
+snippet navbarform "navbarform"
+%form.navbar-form.pull-left
+  %input.span2{:type => "text"}
+  %button.btn{:type => "submit"} ${1:Submit}
+endsnippet
+
+snippet navbarsearch "navbarsearch"
+%form.navbar-search.pull-left
+  %input.search-query{:type => "text", :placeholder => "${1:Search}"}
+endsnippet
+
+snippet navbarstatictop "navbarstatictop"
+.navbar.navbar-static-top
+  ${1:...}
+endsnippet
+
+snippet navlist "navlist"
+%ul.nav.nav-list
+  %li.nav-header ${1:List header}
+  %li.active
+    %a{:href => "#"} ${2:Home}
+  %li
+    %a{:href => "#"} ${3:Library}
+  %li.divider
+  ${4:...}
+endsnippet
+
+snippet navpills "navpills"
+%ul.nav.nav-pills
+  %li.active
+    %a{:href => "#"} ${1:Home}
+  %li
+    %a{:href => "#"} ${2:...}
+  %li
+    %a{:href => "#"} ${3:...}
+endsnippet
+
+snippet navpillsdropdown "navpillsdropdown"
+%ul.nav.nav-pills
+  %li.dropdown
+    %a.dropdown-toggle{'data-toggle' => "dropdown", :href => "#"}
+        ${1:Dropdown}
+        %b.caret
+    %ul.dropdown-menu
+      ${2:<!-- links -->}
+endsnippet
+
+snippet navpillsstacked "navpillsstacked"
+%ul.nav.nav-pills.nav-stacked
+  ${1:...}
+endsnippet
+
+snippet navtabs "navtabs"
+%ul.nav.nav-tabs
+  %li.active
+    %a{:href => "#"} ${1:Home}
+  %li
+    %a{:href => "#"} ${2:...}
+  %li
+    %a{:href => "#"} ${3:...}
+endsnippet
+
+snippet navtabsdropdown "navtabsdropdown"
+%ul.nav.nav-tabs
+  %li.dropdown
+    %a.dropdown-toggle{'data-toggle' => "dropdown", :href => "#"}
+      ${1:Dropdown}
+      %b.caret
+    %ul.dropdown-menu
+      ${2:<!-- links -->}
+endsnippet
+
+snippet navtabsstacked "navtabsstacked"
+%ul.nav.nav-tabs.nav-stacked
+  ${1:...}
+endsnippet
+
+snippet pageheader "pageheader"
+.page-header
+  %h1
+    ${1:Example page header}
+    %small ${2:Subtext for header}
+endsnippet
+
+snippet pager "pager"
+%ul.pager
+  %li
+    %a{:href => "${1:#}"} ${2:Previous}
+  %li
+    %a{:href => "${3:#}"} ${4:Next}
+endsnippet
+
+snippet pageraligned "pageraligned"
+%ul.pager
+  %li.previous
+    %a{:href => "${1:#}"} ${2:&larr; Older}
+  %li.next
+    %a{:href => "${3:#}"} ${4:Newer &rarr;}
+endsnippet
+
+snippet pagination "pagination"
+.pagination
+  %ul
+    %li
+      %a{:href => "#"} Prev
+    %li
+      %a{:href => "#"} 1
+    %li
+      %a{:href => "#"} 2
+    %li
+      %a{:href => "#"} 3
+    %li
+      %a{:href => "#"} 4
+    %li
+      %a{:href => "#"} 5
+    %li
+      %a{:href => "#"} Next
+endsnippet
+
+snippet paginationcentered "paginationcentered"
+.pagination.pagination-centered
+  ${1:...}
+endsnippet
+
+snippet paginationlarge "paginationlarge"
+.pagination.pagination-large
+  %ul
+    ${1:...}
+endsnippet
+
+snippet paginationmini "paginationmini"
+.pagination.pagination-mini
+  %ul
+    ${1:...}
+endsnippet
+
+snippet paginationright "paginationright"
+.pagination.pagination-right
+  ${1:...}
+endsnippet
+
+snippet paginationsmall "paginationsmall"
+.pagination.pagination-small
+  %ul
+    ${1:...}
+endsnippet
+
+snippet prescrollable "prescrollable"
+%pre.pre-scrollable
+  ${1:&lt;p&gt;Sample text here...&lt;/p&gt;}
+endsnippet
+
+snippet progress "progress"
+.progress
+  .bar{:style => "width: ${1:60}%;"}
+endsnippet
+
+snippet progressdanger "progressdanger"
+.progress.progress-danger
+  .bar{:style => "width: ${1:50}%"}
+endsnippet
+
+snippet progressinfo "progressinfo"
+.progress.progress-info
+  .bar{:style => "width: ${1:50}%"}
+endsnippet
+
+snippet progressstacked "progressstacked"
+.progress
+  .bar.bar-success{:style => "width: ${1:35}%;"}
+  .bar.bar-warning{:style => "width: ${2:20}%;"}
+  .bar.bar-danger{:style => "width: ${3:10}%;"}
+endsnippet
+
+snippet progressstriped "progressstriped"
+.progress.progress-striped
+  .bar{:style => "width: ${1:20}%;"}
+endsnippet
+
+snippet progressstripedactive "progressstripedactive"
+.progress.progress-striped.active
+  .bar{:style => "width: ${1:40}%;"}
+endsnippet
+
+snippet progresssuccess "progresssuccess"
+.progress.progress-success
+  .bar{:style => "width: ${1:50}%"}
+endsnippet
+
+snippet progresswarning "progresswarning"
+.progress.progress-warning
+  .bar{:style => "width: ${1:50}%"}
+endsnippet
+
+snippet row "row"
+.row
+  .span${1:4} ${2:...}
+  .span${3:8} ${4:...}
+endsnippet
+
+snippet rowfluid "rowfluid"
+.row-fluid
+  .span${1:4} ${2:...}
+  .span${3:8} ${4:...}
+endsnippet
+
+snippet tabbable "tabbable"
+<!-- Only required for left/right tabs -->
+.tabbable
+  %ul.nav.nav-tabs
+    %li.active
+      %a href="#tab1" data-toggle="tab">${1:Section 1}
+    %li
+      %a href="#tab2" data-toggle="tab">${2:Section 2}
+  .tab-content
+    #tab1.tab-pane.active
+      %p ${3:I'm in Section 1.}
+    #tab2.tab-pane
+      %p ${4:Howdy, I'm in Section 2.}
+endsnippet
+
+snippet tabbabletabsbelow "tabbabletabsbelow"
+.tabbable.tabs-below
+  .tab-content
+    ${1:...}
+  %ul.nav.nav-tabs
+    ${2:...}
+endsnippet
+
+snippet tabbabletabsleft "tabbabletabsleft"
+.tabbable.tabs-left
+  .tab-content
+    ${1:...}
+  %ul.nav.nav-tabs
+    ${2:...}
+endsnippet
+
+snippet tabbabletabsright "tabbabletabsright"
+.tabbable.tabs-right
+  .tab-content
+    ${1:...}
+  %ul.nav.nav-tabs
+    ${2:...}
+endsnippet
+
+snippet table "table"
+%table.table
+  ${1:...}
+endsnippet
+
+snippet tablebordered "tablebordered"
+%table.table.table-bordered
+  ${1:...}
+endsnippet
+
+snippet tablecondensed "tablecondensed"
+%table.table.table-condensed
+  ${1:...}
+endsnippet
+
+snippet tablehover "tablehover"
+%table.table.table-hover
+  ${1:...}
+endsnippet
+
+snippet tablestriped "tablestriped"
+%table.table.table-striped
+  ${1:...}
+endsnippet
+
+snippet textcenter "textcenter"
+%p.text-center ${1:Center aligned text.}
+endsnippet
+
+snippet texterror "texterror"
+%p.text-error ${1:Donec ullamcorper nulla non metus auctor fringilla.}
+endsnippet
+
+snippet textinfo "textinfo"
+%p.text-info ${1:Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.}
+endsnippet
+
+snippet textleft "textleft"
+%p.text-left ${1:Left aligned text.}
+endsnippet
+
+snippet textright "textright"
+%p.text-right ${1:Right aligned text.}
+endsnippet
+
+snippet textsuccess "textsuccess"
+%p.text-success ${1:Duis mollis, est non commodo luctus, nisi erat porttitor ligula.}
+endsnippet
+
+snippet textwarning "textwarning"
+%p.text-warning ${1:Etiam porta sem malesuada magna mollis euismod.}
+endsnippet
+
+snippet thumbnails "thumbnails"
+%ul.thumbnails
+  %li.span4
+    %a.thumbnail{:href => "${1:#}"}
+      %img{:src => "${2:image.jpg}", :alt => ""}
+  ${3:...}
+endsnippet
+
+snippet thumbnailsdiv "thumbnailsdiv"
+%ul.thumbnails
+  %li.span4
+    .thumbnail
+      %img{:src => "${1:image.jpg}", :alt => ""}
+      %h3 ${2:Thumbnail label}
+      %p ${3:Thumbnail caption...}
+  ${4:...}
+endsnippet
+
+snippet uneditableinput "uneditableinput"
+%span.input-large.uneditable-input ${1:Some value here}
+endsnippet
+
+snippet unstyled "unstyled"
+%ul.unstyled
+  %li ${1:...}
+endsnippet
+
+snippet well "well"
+.well
+  ${1:...}
+endsnippet
+
+snippet welllarge "welllarge"
+.well.well-large
+  ${1:...}
+endsnippet
+
+snippet wellsmall "wellsmall"
+.well.well-small
+  ${1:...}
+endsnippet
+
+
