@@ -1,20 +1,24 @@
 Bootstrap Snippets
 ==================
 
-This repository contains HTML and Haml snippet files for Twitter Bootstrap, for the famous [snipmate](https://github.com/garbas/vim-snipmate) plugin for Vim.
+This repository contains HTML and Haml snippet files for Twitter Bootstrap, for the
+  [snipmate][snipmate] and [UltiSnips][ultisnips] plugin for Vim.
 
 Dependencies
 ------------
 
-- [vim-snipmate](https://github.com/garbas/vim-snipmate)
+- [vim-snipmate][snipmate]
+or
+- [UltiSnips][ultisnips]
 
 How to install
 --------------
 
-- Install [vim-snipmate](https://github.com/garbas/vim-snipmate) and dependencies
+- Install [vim-snipmate][snipmate] and dependencies
+- Or install [UltiSnips][snipmate]
 - Install bootstrap-snippets
 
-Installation using [Pathogen](https://github.com/tpope/vim-pathogen)
+Installation using [Pathogen][pathogen]
 ---------------------------
 
     $ cd ~/.vim
@@ -22,10 +26,19 @@ Installation using [Pathogen](https://github.com/tpope/vim-pathogen)
     $ cd bundle
     $ git clone git://github.com/bonsaiben/bootstrap-snippets.git
 
+Snipmate
+========
+
     # Install dependencies:
     $ git clone https://github.com/garbas/vim-snipmate.git
     $ git clone https://github.com/tomtom/tlib_vim.git
     $ git clone https://github.com/MarcWeber/vim-addon-mw-utils.git
+
+UltiSnips
+=========
+
+    # Install dependencies:
+    $ git clone https://github.com/SirVer/ultisnips.git
 
 Usage
 -----
@@ -35,4 +48,8 @@ Generally the snippet trigger will be the name of the relevant class or combinat
 For example, `btnprimary` converts to:
 
     %button.btn.btn-primary{:type => "button"} ${1:Default}
+
+[snipmate]: https://github.com/garbas/vim-snipmate "Snipmate"
+[ultisnips]: https://github.com/SirVer/ultisnips "UltiSnips"
+[pathogen]: https://github.com/tpope/vim-pathogen
 
