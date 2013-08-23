@@ -839,3 +839,70 @@ snippet wellsmall
 	  ${1:...}
 	</div>
 
+#added by Ian W Scott -------------------------------------------------------
+
+snippet panelgroup
+	<div class="panel-group" id="${1:id}">
+		<div class="panel">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					<a class="accordion-toggle"
+						data-toggle="collapse"
+						data-parent="#accordion"
+						href="#collapseOne">${2:title}
+					</a>    
+				</h3>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse">
+				<div class='panel-body'>
+				${3:content}
+				</div>
+			</div>
+		</div>
+	</div>
+
+snippet panel
+	<div class="panel">
+		<div class="panel-heading">
+			<h3 class="panel-title">
+				<a class="accordion-toggle"
+					data-toggle="collapse"
+					data-parent="#accordion"
+					href="#collapse${1:number}">${2:title}
+				</a>    
+			</h3>
+		</div>
+		<div id="collapse${3:number}" class="panel-collapse collapse">
+			<div class='panel-body'>
+			${4:content}
+			</div>
+		</div>
+	</div>
+
+snippet panelheading
+
+	<div class="panel-heading">
+		<h3 class="panel-title">
+			<a class="accordion-toggle"
+				data-toggle="collapse"
+				data-parent="#accordion"
+				href="#collapse${1:number}">${2:title}
+			</a>    
+		</h3>
+	</div>
+
+snippet paneltitle
+	<h3 class="panel-title">
+		<a class="accordion-toggle"
+			data-toggle="collapse"
+			data-parent="#accordion"
+			href="#collapse${1:number}">${2:title}
+		</a>    
+	</h3>
+
+snippet panelbody
+	<div id="collapse${1:number}" class="panel-collapse collapse">
+		<div class='panel-body'>
+		${2:content}
+		</div>
+	</div>
